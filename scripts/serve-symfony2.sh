@@ -54,6 +54,10 @@ block="server {
         internal;
     }
 
+    location ~ \.php$ {
+        return 404;
+    }
+
     location ~ /\.ht {
         deny all;
     }
